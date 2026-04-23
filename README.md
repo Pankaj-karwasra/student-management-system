@@ -1,0 +1,1 @@
+A modern Student Management System built using React, Vite, and Zustand for state management. This application allows users to perform full CRUD (Create, Read, Update, Delete) operations on student records with a clean and responsive UI. It integrates REST APIs using Axios and handles authentication using JWT for secure access.
