@@ -1,0 +1,70 @@
+### Signup
+POST http://localhost:5000/api/reg
+Content-Type: application/json
+
+{
+    "username":"test2",
+    "email":"test2@gmail.com",
+    "password":"123"
+}
+
+
+### Login 
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+  "email": "test2@gmail.com",
+  "password": "123"
+}
+
+### change Password
+POST http://localhost:5000/api/changepassword
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZmEwMWFlMWM1Y2ZiMGZkN2NmYTZhNyIsImVtYWlsIjoidGVzdDJAZ21haWwuY29tIiwiaWF0IjoxNzYxMjE1OTgwLCJleHAiOjE3NjEyMTk1ODB9.vGku38oKRZMuqMb88juJOiKYJntpV5a9SoorvkO_jns
+Content-Type: application/json
+
+{ 
+  "oldPassword": "123",
+  "newPassword": "1234"
+}
+
+### Post Student
+POST http://localhost:5000/api/addstudent
+Content-Type: application/json
+
+{
+  "first_name": "Pankaj111",
+  "last_name": "Karwasra111",
+  "email": "ram111@gmail.com",
+  "phone": "987634232111",
+  "address": "Jaipur, Rajasthan"
+}
+
+
+### Get student
+GET http://localhost:5000/api/getStudent
+Content-Type: application/json
+
+
+### Get by Id
+GET http://localhost:5000/api/getstudent/68fb4385beef40c533791c33
+Content-Type: application/json
+
+
+### Update Student
+PUT http://localhost:5000/api/updatestudent/68fedeea43ac18a93914d6fb
+Content-Type: application/json
+
+{
+  "first_name": "Raman1",
+  "last_name": "Kumar",
+  "email": "raman111@gmail.com",
+  "phone": "9876543",
+  "address": "Jaipur, Rajasthan"
+}
+
+
+
+### Delete 
+DELETE http://localhost:5000/api/deletestudent/68fb4385beef40c533791c33
+Content-Type: application/json

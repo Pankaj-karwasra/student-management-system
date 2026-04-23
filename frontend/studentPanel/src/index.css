@@ -1,0 +1,17 @@
+/* Custom styles for auth pages (login, signup, change-password) */
+body.auth-page {
+    background-color: #f4f7f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 450px; /* Set a max-width for the forms */
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 0.5rem;
+}
